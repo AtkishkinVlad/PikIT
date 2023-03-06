@@ -166,6 +166,7 @@
 .grid_wrapper .tall {
 	grid-row: span 2;
   position: relative;
+  min-width: 220px;
 }
 
 .grid_wrapper .big {
