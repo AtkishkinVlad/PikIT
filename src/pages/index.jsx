@@ -26,7 +26,7 @@ export default function Home() {
                 Любишь докопаться до сути и расписать весь процесс от и до
               </h3>
             </Link>
-            <Link href="/" className={styles.wide}>
+            <Link href="/dev" className={styles.wide}>
               <img
                 className={styles.image}
                 src="/preview6.svg"

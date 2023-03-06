@@ -1,0 +1,14 @@
+.job {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: var(--desktop-width);
+}
+
+.footer {
+    margin: 2rem auto;
+    width: fit-content;
+}
