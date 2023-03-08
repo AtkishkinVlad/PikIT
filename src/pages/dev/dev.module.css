@@ -8,7 +8,30 @@
     width: var(--desktop-width);
 }
 
+.p {
+    text-align: center;
+}
+
 .footer {
     margin: 2rem auto;
     width: fit-content;
 }
+
+ svg .svgElem {
+    stroke-dasharray: 2680.09326171875px;
+    animation: dash-offset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  }
+  
+  svg .svgElem {
+    stroke-dashoffset: 0;
+  }
+  
+  @keyframes dash-offset {
+    0% {
+        stroke-dashoffset: 2680.09326171875px;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+    }
+  }

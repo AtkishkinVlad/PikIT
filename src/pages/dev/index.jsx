@@ -17,13 +17,30 @@ export default function Dev() {
           <h1 className={styles.job}>Может ты хочешь стать разработчиком?</h1>
         </header>
         <main>
-          <p>
-            В нашем телеграме рассказываем про курсы и делимся полезными материалами.
+          <p className={styles.p}>
+            В нашем телеграме рассказываем про курсы и делимся полезными
+            материалами.
           </p>
         </main>
         <footer className={styles.footer}>
           <MainLink />
         </footer>
+      </div>
+      <div style={{ position: "absolute", bottom: 0, right: 0 }}>
+        <svg
+          width={943}
+          height={647}
+          viewBox="0 0 943 647"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 747C269.192 700.465 324.273 351.862 285.74 242.434C247.207 133.006 125.661 191.261 141.269 291.171C156.876 391.082 273.036 541.208 540.787 541.208C826.293 541.208 846.363 283.778 742 222C655 170.5 609.5 280.099 684.5 332.5C870.196 462.241 1004.34 185.399 1025 7"
+            stroke="#FF5A49"
+            strokeWidth={110}
+            className={styles.svgElem}
+          />
+        </svg>
       </div>
     </>
   );
