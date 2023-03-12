@@ -4,7 +4,7 @@
 }
 
 .qr__container:hover > img {
-    box-shadow: rgba(229, 60, 60, 0.25) 0px 54px 55px, rgba(229, 60, 60, 0.25) 0px -12px 30px, rgba(229, 60, 60, 0.25) 0px 4px 6px, rgba(229, 60, 60, 0.17) 0px 12px 13px, rgba(229, 60, 60, 0.09) 0px -3px 5px;
+    box-shadow: var(--qr) 0px 8px 24px;
 }
 
 .qr__container > img {

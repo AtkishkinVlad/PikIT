@@ -29,7 +29,7 @@ export default function Dev() {
             В нашем телеграме рассказываем про курсы и делимся полезными
             материалами.
           </p>
-          <QR />
+          <QR color="#46CD68" />
           <SocialNetwork />
         </main>
         <footer className={styles.footer}>
