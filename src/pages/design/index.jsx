@@ -21,7 +21,7 @@ export default function Dev() {
           </h1>
         </header>
         <main className={styles.main}>
-          <details className={styles.details}>
+          <details style={{ backgroundColor: '#C25BD8' }} className={styles.details}>
             <summary>Подробности</summary>
             <p>В Контуре есть свое руководство по проектированию интерфейсов :)</p>
           </details>
@@ -33,7 +33,7 @@ export default function Dev() {
           <SocialNetwork />
         </main>
         <footer className={styles.footer}>
-          <MainLink />
+          <MainLink color="#C25BD8" />
         </footer>
       </div>
       <div className={styles.firstSvg}>

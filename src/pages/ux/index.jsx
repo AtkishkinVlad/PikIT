@@ -23,7 +23,7 @@ export default function Dev() {
           </h1>
         </header>
         <main className={styles.main}>
-          <details className={styles.details}>
+          <details style={{ backgroundColor: "#FF9D92" }} className={styles.details}>
             <summary>Подробности</summary>
             <p>В Контуре есть телеграмм канал Сдоба :)</p>
           </details>
@@ -35,7 +35,7 @@ export default function Dev() {
           <SocialNetwork />
         </main>
         <footer className={styles.footer}>
-          <MainLink />
+          <MainLink color="#FF9D92" />
         </footer>
       </div>
       <div className={styles.firstSvg}>

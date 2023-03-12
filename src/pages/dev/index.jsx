@@ -12,30 +12,32 @@ export default function Dev() {
         <title>Разработчик</title>
         <meta name="description" content="Страница про разработчиков Контура" />
         <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-        <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
+        <link
+          rel="icon"
+          href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg"
+        />
       </Head>
       <div className={styles.container}>
         <header>
           <h1 className={styles.job}>Может ты хочешь стать разработчиком?</h1>
         </header>
         <main className={styles.main}>
+          <details className={styles.details}>
+            <summary>Подробности</summary>
+            <p>
+              В Контуре для программистов есть программы Шпора Фронтенд и Бекенд
+              :)
+            </p>
+          </details>
           <p className={styles.p}>
             В нашем телеграме рассказываем про курсы и делимся полезными
             материалами.
           </p>
-          <details className={styles.details}>
-            <summary>
-              Подробности
-            </summary>
-            <p>
-              В Контуре для программистов есть программы Шпора Фронтенд и Бекенд :)
-            </p>
-          </details>
           <QR />
           <SocialNetwork />
         </main>
         <footer className={styles.footer}>
-          <MainLink />
+          <MainLink color="#FF5A49" />
         </footer>
       </div>
       <div className={styles.firstSvg}>

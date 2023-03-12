@@ -1,88 +1,87 @@
 .job {
-    font-size: 3rem;
-    text-align: center;
-  }
-  
-  .container {
-    margin: 0 auto;
-    width: var(--desktop-width);
-    animation: welcome 1s ease-in-out;
-    position: relative;
-    z-index: 10;
-  }
-  
-  .main {
-    display: flex;
-    flex-flow: column wrap;
-  }
-  
-  .p {
-    text-align: center;
-    font-size: 1.1rem;
-  }
-  
-  .footer {
-    margin: 2rem auto;
-    width: fit-content;
-  }
-  
-  .details {
-      align-self: center;
-      background-color: rgba(255, 90, 73, 0.8);
-      padding: 1rem;
-      border-radius: 1rem;
-      width: 100%;
-      cursor: pointer;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: var(--desktop-width);
+  animation: welcome 1s ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+
+.main {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.footer {
+  margin: 2rem auto;
+  width: fit-content;
+}
+
+.details {
+    align-self: center;
+    background-color: rgba(255, 90, 73, 0.8);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.details p {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.firstSvg {
+    position: fixed; 
+    bottom: -20px; 
+    right: 0;
+}
+
+.secondSvg {
+    position: fixed; 
+    top: -40px; 
+    left: 0;
+}
+
+svg .svgElem {
+  stroke-dasharray: 2680.09326171875px;
+  animation: dash-offset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+
+svg .svgElem {
+  stroke-dashoffset: 0;
+}
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dash-offset {
+  0% {
+    stroke-dashoffset: 2680.09326171875px;
   }
 
-  .details p {
-    padding-left: 1em;
-    padding-top: 1em;
+  100% {
+    stroke-dashoffset: 0px;
   }
-  
-  .firstSvg {
-      position: fixed; 
-      bottom: -20px; 
-      right: 0;
-  }
-  
-  .secondSvg {
-      position: fixed; 
-      top: -40px; 
-      left: 0;
-  }
-  
-  svg .svgElem {
-    stroke-dasharray: 2680.09326171875px;
-    animation: dash-offset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
-  }
-  
-  svg .svgElem {
-    stroke-dashoffset: 0;
-  }
-  
-  @keyframes welcome {
-      0% {
-          opacity: 0;
-      }
-  
-      100% {
-          opacity: 1;
-      }
-  }
-  
-  @keyframes dash-offset {
-    0% {
-      stroke-dashoffset: 2680.09326171875px;
+}
+
+@media screen and (max-width: 1100px) {
+    .firstSvg, .secondSvg {
+        display: none;
     }
-  
-    100% {
-      stroke-dashoffset: 0px;
-    }
-  }
-  
-  @media screen and (max-width: 1100px) {
-      .firstSvg, .secondSvg {
-          display: none;
-      }
-  }
+}

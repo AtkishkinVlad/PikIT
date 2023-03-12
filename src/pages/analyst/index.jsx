@@ -19,7 +19,7 @@ export default function Dev() {
           <h1 className={styles.job}>Может ты хочешь стать аналитиком?</h1>
         </header>
         <main className={styles.main}>
-          <details className={styles.details}>
+          <details style={{ backgroundColor: '#366AF3' }} className={styles.details}>
             <summary>Подробности</summary>
             <p>У Контура есть свой курс по системному анализу :)</p>
           </details>
@@ -31,7 +31,7 @@ export default function Dev() {
           <SocialNetwork />
         </main>
         <footer className={styles.footer}>
-          <MainLink />
+          <MainLink color="#366AF3" />
         </footer>
       </div>
       <div className={styles.firstSvg}>
