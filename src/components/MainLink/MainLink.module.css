@@ -4,7 +4,15 @@
     background-color: #FF5A49;
     border-radius: 0.5rem;
     margin: 0 auto;
-    transition: border 0.15s ease-in-out;
+    transition: border ease-in-out;
+}
+
+.link_main::before {
+    content: '← ';
+}
+
+.link_main:hover:before {
+    transform: scale(1.1) translateX(10px);
 }
 
 .link_main:hover {

@@ -16,7 +16,7 @@ export default function Home() {
         <main className={styles.postcard__description}>
           <h1 className={styles.description__title}>Что выберешь?</h1>
           <div className={styles.grid_wrapper}>
-            <Link href="/" className={styles.wide}>
+            <Link href="/analyst" className={styles.wide}>
               <img
                 className={styles.image}
                 src="/preview1.svg"
@@ -36,7 +36,7 @@ export default function Home() {
                 Любишь кодить, много кодить
               </h3>
             </Link>
-            <Link href="/" className={styles.tall}>
+            <Link href="/design" className={styles.tall}>
               <img
                 className={styles.image}
                 src="/preview2.svg"
@@ -46,7 +46,7 @@ export default function Home() {
                 Любишь делать красиво и знаешь, что дизайн в мелочах
               </h3>
             </Link>
-            <Link href="/" className={styles.tall}>
+            <Link href="/manager" className={styles.tall}>
               <img
                 className={styles.image}
                 src="/preview3.svg"
@@ -56,7 +56,7 @@ export default function Home() {
                 Любишь разговаривать с людьми и настраивать процессы
               </h3>
             </Link>
-            <Link href="/" className={styles.wide}>
+            <Link href="/qa" className={styles.wide}>
               <img
                 className={styles.image}
                 src="/preview4.svg"
@@ -66,7 +66,7 @@ export default function Home() {
                 Всегда находишь ошибки
               </h3>
             </Link>
-            <Link href="/" className={styles.wide}>
+            <Link href="/ux" className={styles.wide}>
               <img
                 className={styles.image}
                 src="/preview5.svg"
