@@ -12,7 +12,10 @@ export default function Dev() {
         <title>UX-исследователь</title>
         <meta name="description" content="Страница про юзабилистов" />
         <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-        <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
+        <link
+          rel="icon"
+          href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg"
+        />
       </Head>
       <div className={styles.container}>
         <header>
@@ -23,16 +26,28 @@ export default function Dev() {
           </h1>
         </header>
         <main className={styles.main}>
-          <details style={{ backgroundColor: "#FF9D92" }} className={styles.details}>
+          <details
+            style={{ backgroundColor: "#FF9D92" }}
+            className={styles.details}
+          >
             <summary>Подробности</summary>
-            <p>В Контуре есть телеграмм канал Сдоба :)</p>
+            <p>
+              Задача UX-исследователя — помочь бизнесу заработать или сэкономить
+              деньги с помощью проверки продуктовых гипотез. Например, выяснить,
+              будет ли новый продукт востребован. А если нет, то какой будет?
+              Как улучшить нынешний сервис для пользователей?
+            </p>
+            <p>
+              Для этого UX-исследователь изучает эмоции и реакции пользователей
+              с помощью различных инструментов, проводит интервью и юзабилити
+              тестирование.
+            </p>
           </details>
           <p className={styles.p}>
             В нашем телеграме рассказываем про курсы и делимся полезными
             материалами.
           </p>
           <QR color="#FF9D92" />
-          <SocialNetwork />
         </main>
         <footer className={styles.footer}>
           <MainLink color="#FF9D92" />

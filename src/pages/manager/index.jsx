@@ -10,9 +10,15 @@ export default function Dev() {
     <>
       <Head>
         <title>Менеджер разработки</title>
-        <meta name="description" content="Страница про менеджеров разработки Контура" />
+        <meta
+          name="description"
+          content="Страница про менеджеров разработки Контура"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-        <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
+        <link
+          rel="icon"
+          href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg"
+        />
       </Head>
       <div className={styles.container}>
         <header>
@@ -21,16 +27,28 @@ export default function Dev() {
           </h1>
         </header>
         <main className={styles.main}>
-          <details style={{ backgroundColor: '#46CD68' }} className={styles.details}>
+          <details
+            style={{ backgroundColor: "#46CD68" }}
+            className={styles.details}
+          >
             <summary>Подробности</summary>
-            <p>Менеджеры Контура пишут много статей на Medium :)</p>
+            <p>
+              Менеджер разработки в Контуре умеет управлять кросс-функциональной
+              командой, в которой кроме разработчиков есть и другие роли:
+              тестировщики, аналитики, проектировщики.
+            </p>
+            <p>
+              Менеджер улучшает процессы, обеспечивает качество, скорость и
+              сроки разработки. А еще он заботится о людях: нанимает,
+              адаптирует, мотивирует и создает в команде комфортную атмосферу
+              взаимной поддержки и сотрудничества.
+            </p>
           </details>
           <p className={styles.p}>
-            В нашем телеграме рассказываем про курсы и делимся полезными
-            материалами.
+            Переходите в наш телеграм-канал и забирайте полезный плейлист про
+            профессии в IT.
           </p>
           <QR color="#46CD68" />
-          <SocialNetwork />
         </main>
         <footer className={styles.footer}>
           <MainLink color="#46CD68" />

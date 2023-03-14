@@ -14,7 +14,9 @@ export default function Home() {
       </Head>
       <div className={styles.postcard__container}>
         <main className={styles.postcard__description}>
-          <h1 className={styles.description__title}>Что выберешь?</h1>
+          <h1 className={styles.description__title}>
+            В чем твоя сильная сторона?
+          </h1>
           <div className={styles.grid_wrapper}>
             <Link href="/analyst" className={styles.wide}>
               <img

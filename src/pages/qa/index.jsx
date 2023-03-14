@@ -12,25 +12,37 @@ export default function Dev() {
         <title>Тестировщик</title>
         <meta name="description" content="Страница про тестировщиков Контура" />
         <meta name="viewport" content="width=device-width, initial-scale=0.8" />
-        <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
+        <link
+          rel="icon"
+          href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg"
+        />
       </Head>
       <div className={styles.container}>
         <header>
-          <h1 className={styles.job}>
-            Может ты хочешь стать тестировщиком?
-          </h1>
+          <h1 className={styles.job}>Может ты хочешь стать тестировщиком?</h1>
         </header>
         <main className={styles.main}>
-          <details style={{ backgroundColor: '#FFA236' }} className={styles.details}>
+          <details
+            style={{ backgroundColor: "#FFA236" }}
+            className={styles.details}
+          >
             <summary>Подробности</summary>
-            <p>У Контура есть свой курс по тестированию на платформе Ulearn.me :)</p>
+            <p>
+              Каждый тестировщик в Контуре — от стажера до руководителя отдела —
+              тестирует задачи. Наши тестировщики могут писать код автотестов и
+              выполнять ручные проверки в пропорциях, необходимых проекту.
+            </p>
+            <p>
+              Тестировщик планирует выпуск релизов и разрабатывает стратегию
+              тестирования новых продуктов. У Контура есть свой бесплатный курс
+              по тестированию ПО :)
+            </p>
           </details>
           <p className={styles.p}>
-            В нашем телеграме рассказываем про курсы и делимся полезными
-            материалами.
+            Переходите в наш телеграм-канал и забирайте полезный плейлист про
+            профессии в IT.
           </p>
           <QR color="#FFA236" />
-          <SocialNetwork />
         </main>
         <footer className={styles.footer}>
           <MainLink color="#FFA236" />
