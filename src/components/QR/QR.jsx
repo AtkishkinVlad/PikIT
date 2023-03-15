@@ -10,7 +10,7 @@ export function QR({ color }) {
   }, [])
 
   return (
-    <Link className={styles.qr__container} href="https://t.me/kontur_student">
+    <Link className={styles.qr__container} href="https://t.me/+JDEI1-zeClIwZDYy">
         <Image alt="Наш телеграмм канал" src="/qrcode.svg" width={580} height={580} />
     </Link>
   )
