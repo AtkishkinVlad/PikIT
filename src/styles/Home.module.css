@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 500px;
   animation: welcome-animation 2s forwards;
 }
 
@@ -211,11 +212,15 @@
 }
 
 .button {
-  background-color: #015ccb;
+  background-color: #015ccb !important;
   color: #fff;
   outline: 0;
   border: 0;
   border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+  height: max(10vh, 150px);
+  padding: 24px;
   cursor: pointer;
 }
 

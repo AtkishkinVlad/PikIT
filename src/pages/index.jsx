@@ -30,7 +30,7 @@ export default function Home() {
       <Head>
         <title>Agile Days + Контур = 💕</title>
         <meta name="description" content="Что ты выберешь?" />
-        <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.6" />
         <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
       </Head>
       <div className={styles.postcard__container}>
@@ -84,7 +84,7 @@ export default function Home() {
                 Признавался руководителю, что не вывозишь
               </h3>
             </label>
-            {checkCount > 0 && <button className={styles.button} type="submit">Вот такой мой опыт</button>}
+            {checkCount > 0 && <button className={`${styles.button} ${styles.wide}`} type="submit">Вот такой мой опыт</button>}
           </form>
         </main>
       </div>
