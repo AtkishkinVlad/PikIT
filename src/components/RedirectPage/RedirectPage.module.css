@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 32px auto;
+    text-align: center;
+    height: 90vh;
+    width: 550px;
+}
+
+.main__content {
+    flex: 1;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.link {
+    background-color: red;
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    display: none;
+    animation: people linear;
+}
+
+.talk {
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    display: none;
+    animation: people linear;
+}
+
+@keyframes people {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-15deg);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 650px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .container {
+        width: 750px;
+    }
+
+    .talk,
+    .logo {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 950px;
+    }
+}

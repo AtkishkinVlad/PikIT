@@ -1,13 +1,34 @@
 import Head from "next/head";
-import Link from "next/link";
+import { useState } from "react";
+import { useForm } from '@formcarry/react';
+
+import { RedirectPage } from "@/components/RedirectPage/RedirectPage";
 
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
+  const [checkCount, setCheckCount] = useState(0);
+  const { state, submit } = useForm({
+    id: 'q5LFbfhDLj'
+  });
+
+  const onClickHandler = (e) => {
+    if (e.target.checked) {
+      setCheckCount(checkCount + 1)
+    }
+    else {
+      setCheckCount(checkCount - 1)
+    }
+  }
+
+  if (state.submitted) {
+    return <RedirectPage />;
+  }
+
   return (
     <>
       <Head>
-        <title>Пик IT + Контур = 💕</title>
+        <title>Agile Days + Контур = 💕</title>
         <meta name="description" content="Что ты выберешь?" />
         <meta name="viewport" content="width=device-width, initial-scale=0.8" />
         <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
@@ -15,70 +36,56 @@ export default function Home() {
       <div className={styles.postcard__container}>
         <main className={styles.postcard__description}>
           <h1 className={styles.description__title}>
-            В чем твоя сильная сторона?
+            Что делал ?
           </h1>
-          <div className={styles.grid_wrapper}>
-            <Link href="/analyst" className={styles.wide}>
-              <img
-                className={styles.image}
-                src="/preview1.svg"
-                alt=""
-              />
+          <p style={{ textAlign: 'center', marginBottom: '32px' }}>
+            Расскажи о своем тернистом пути :)
+          </p>
+          <form onSubmit={submit} className={styles.grid_wrapper}>
+            <label htmlFor="1" className={styles.wide}>
+              <input id="1" name="1" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Увольнял сотрудника" />
               <h3 className={styles.description}>
-                Любишь докопаться до сути и расписать весь процесс от и до
+                Увольнял сотрудника
               </h3>
-            </Link>
-            <Link href="/dev" className={styles.wide}>
-              <img
-                className={styles.image}
-                src="/preview6.svg"
-                alt=""
-              />
+            </label>
+            <label htmlFor="2" className={styles.wide}>
+              <input id="2" name="2" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Вырастил тимлида" />
               <h3 className={styles.description}>
-                Любишь кодить, много кодить
+                Вырастил тимлида
               </h3>
-            </Link>
-            <Link href="/design" className={styles.tall}>
-              <img
-                className={styles.image}
-                src="/preview2.svg"
-                alt=""
-              />
+            </label>
+            <label htmlFor="3" className={styles.tall}>
+              <input id="3" name="3" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Вырастил команду в 2 раза" />
               <h3 className={styles.description}>
-                Любишь делать красиво и знаешь, что дизайн в мелочах
+                Вырастил команду в 2 раза
               </h3>
-            </Link>
-            <Link href="/manager" className={styles.tall}>
-              <img
-                className={styles.image}
-                src="/preview3.svg"
-                alt=""
-              />
+            </label>
+            <label htmlFor="4" className={styles.tall}>
+              <input id="4" name="4" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Настраивал джиру / ютрек" />
               <h3 className={styles.description}>
-                Любишь разговаривать с людьми и настраивать процессы
+                Настраивал джиру/ютрек
               </h3>
-            </Link>
-            <Link href="/qa" className={styles.wide}>
-              <img
-                className={styles.image}
-                src="/preview4.svg"
-                alt=""
-              />
+            </label>
+            <label htmlFor="5" className={styles.wide}>
+              <input id="5" name="5" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Выбивал бюджет на команду" />
               <h3 className={styles.description}>
-                Всегда находишь ошибки
+                Выбивал бюджет на команду
               </h3>
-            </Link>
-            <Link href="/ux" className={styles.wide}>
-              <img
-                className={styles.image}
-                src="/preview5.svg"
-                alt=""
-              />
+            </label>
+            <label htmlFor="6" className={styles.wide}>
+              <input id="6" name="6" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Пережил выгорание" />
               <h3 className={styles.description}>
-                Любишь заботиться и проявлять эмпатию
+                Пережил выгорание
               </h3>
-            </Link>
-          </div>
+            </label>
+            <label htmlFor="7"  className={styles.big}>
+              <input id="7" name="7" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Признавался руководителю, что не вывозишь" />
+              <h3 className={styles.description}>
+                Признавался руководителю, что не вывозишь
+              </h3>
+            </label>
+            {checkCount > 0 && <button className={styles.button} type="submit">Вот такой мой опыт</button>}
+          </form>
         </main>
       </div>
       <div className={styles.light1} />
