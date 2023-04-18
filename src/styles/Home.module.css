@@ -214,6 +214,8 @@
 .button {
   background-color: #015ccb !important;
   color: #fff;
+  font-weight: 700;
+  grid-column: 3 span;
   outline: 0;
   border: 0;
   border-radius: 1rem;
