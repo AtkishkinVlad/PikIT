@@ -30,7 +30,7 @@ export default function Home() {
       <Head>
         <title>Agile Days + Контур = 💕</title>
         <meta name="description" content="Что ты выберешь?" />
-        <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.4" />
         <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
       </Head>
       <div className={styles.postcard__container}>
@@ -105,7 +105,7 @@ export default function Home() {
             <label htmlFor="11"  className={styles.wide}>
               <input id="11" name="11" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Погружазился в сложную предметку" />
               <h3 className={styles.description}>
-                Погружазился в сложную предметку
+                Погружался в сложную предметку
               </h3>
             </label>
             <label htmlFor="12"  className={styles.tall}>

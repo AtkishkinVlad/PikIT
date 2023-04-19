@@ -9,6 +9,11 @@
 
 .main__content {
     flex: 1;
+    margin: 24px;
+}
+
+.kontur {
+    transform: scale(14) translateX(10px) translateY(7px) rotateZ(19deg);
 }
 
 .title {

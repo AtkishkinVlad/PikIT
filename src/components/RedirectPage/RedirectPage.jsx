@@ -12,16 +12,17 @@ export const RedirectPage = () => {
         </h1>
         <section className={styles.main__content}>
             <p style={{ textAlign: 'start', marginBottom: '64px' }}>Если тебе интересно познакомиться с Контуром поближе, получать приглашения на полезные митапы и конференции про управление, или поговорить про работу, пожалуйста, заполни эту анкету. А еще — приходи на стенд за временной татуировкой на менеджерском языке :)</p>
+            <Image className={styles.kontur} src="/kontur.svg" height={32} width={32} />
             <a className={styles.link} href='https://forms.kontur.ru/form/agile-days-online' hrefLang='ru'>
-                Cсылка на анкету 🥰
+                Заполнить анкету
             </a>
         </section>
-        <footer>
+        <footer style={{ marginTop: '64px' }}>
             © 1988–2023 СКБ Контур    
         </footer>
     </main>
-    <Image className={styles.logo} alt="Логотип Контура" width={300} height={300} src="https://s.kontur.ru/common-v2/icons-features/glass/red/black-bg/icon-11-people-figure-3-happy@2x.png" />
-    <Image className={styles.talk} alt="Логотип Контура" width={300} height={300} src="https://s.kontur.ru/common-v2/icons-features/glass/red/black-bg/icon-12-symbol-talk@2x.png" />
+    <Image className={styles.logo} alt="Логотип Контура" width={200} height={200} src="https://s.kontur.ru/common-v2/icons-features/glass/red/black-bg/icon-11-people-figure-3-happy@2x.png" />
+    <Image className={styles.talk} alt="Логотип Контура" width={200} height={200} src="https://s.kontur.ru/common-v2/icons-features/glass/red/black-bg/icon-12-symbol-talk@2x.png" />
     </>
   )
 }
