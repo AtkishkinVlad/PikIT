@@ -114,25 +114,25 @@ export default function Home() {
                 Внедрял скрам/канбан
               </h3>
             </label>
-            <label htmlFor="13"  className={styles.wide}>
+            <label htmlFor="13"  className={styles.tall}>
               <input id="13" name="13" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Выходил из команды и она не разваливаллась" />
               <h3 className={styles.description}>
                 Выходил из команды и она не разваливалась
               </h3>
             </label>
-            <label htmlFor="14"  className={styles.wide}>
+            <label htmlFor="14"  className={styles.tall}>
               <input id="14" name="14" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Уговорил бизнес выделить время на техдолг" />
               <h3 className={styles.description}>
                 Уговорил бизнес выделить время на техдолг 
               </h3>
             </label>
-            <label htmlFor="15"  className={styles.big}>
+            <label htmlFor="15"  className={styles.tall}>
               <input id="15" name="15" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Работал в команде из нескольких менеджеров" />
               <h3 className={styles.description}>
                 Работал в команде из нескольких менеджеров  
               </h3>
             </label>
-            <label htmlFor="16"  className={styles.tall}>
+            <label htmlFor="16"  className={styles.wide}>
               <input id="16" name="16" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Существенно ускорил ТТМ" />
               <h3 className={styles.description}>
                 Существенно ускорил ТТМ   

@@ -163,7 +163,7 @@
 }
 
 .grid_wrapper .wide {
-	grid-column: span 2;
+	grid-column: span 3;
   position: relative;
   transition: all 0.2s ease-in-out;
   will-change: transform;
@@ -185,7 +185,7 @@
 }
 
 .grid_wrapper .tall {
-	grid-row: span 2;
+	grid-row: span 3;
   position: relative;
   min-width: 220px;
   transition: all 0.2s ease-in-out;
@@ -196,7 +196,7 @@
 }
 
 .grid_wrapper .big {
-	grid-column: span 2;
+	grid-column: span 3;
 	grid-row: span 2;
   position: relative;
   transition: all 0.2s ease-in-out;
