@@ -12,7 +12,6 @@ export const RedirectPage = () => {
         </h1>
         <section className={styles.main__content}>
             <p style={{ textAlign: 'start', marginBottom: '64px' }}>Если тебе интересно познакомиться с Контуром поближе, получать приглашения на полезные митапы и конференции про управление, или поговорить про работу, пожалуйста, заполни эту анкету. А еще — приходи на стенд за временной татуировкой на менеджерском языке :)</p>
-            <Image className={styles.kontur} src="/kontur.svg" height={32} width={32} />
             <a className={styles.link} href='https://forms.kontur.ru/form/agile-days-online' hrefLang='ru'>
                 Заполнить анкету
             </a>
