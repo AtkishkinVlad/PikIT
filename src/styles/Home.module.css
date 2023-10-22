@@ -230,10 +230,11 @@
   margin-top: 1rem;
   padding: 24px;
   cursor: pointer;
+  transition: box-shadow 0.15s linear;
 }
 
 .button:hover {
-  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 :is(.grid_wrapper .big, .grid_wrapper .tall, .grid_wrapper .wide):hover {
