@@ -3,8 +3,6 @@ import { useState } from "react";
 import { useForm } from '@formcarry/react';
 import Image from "next/image";
 
-import { RedirectPage } from "@/components/RedirectPage/RedirectPage";
-
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -126,10 +124,8 @@ export default function Home() {
           </form>
         </main>
       </div>
-      <div className={styles.light1} />
-      <div className={styles.light2} />
-      <div className={styles.light3} />
-      <div className={styles.light4} />
+      <Image className={styles.light1} width={24} height={24} alt="Логотип Толка" src="https://s.kontur.ru/common-v2/icons-products/talk/talk-32.svg" />
+      <Image className={styles.light2} width={24} height={24} alt="Логотип Толка" src="https://s.kontur.ru/common-v2/icons-products/talk/talk-32.svg" />
     </>
   );
 }

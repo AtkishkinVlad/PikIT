@@ -70,32 +70,26 @@
   display: block;
   position: fixed;
   top: 60%;
-  right: 16%;
+  right: 25%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
   min-height: 145.77px;
+  transform: rotate(5deg);
   z-index: -1;
-  background: conic-gradient(#8ac1f8, #a9dbf8);
-  animation: light-pulse 1.25s ease-out infinite both alternate;
-  border-radius: 50%;
-  filter: blur(16px);
 }
 
 .light2 {
   display: block;
   position: fixed;
-  top: 33%;
-  left: 50%;
+  bottom: 35%;
+  left: 25%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
   min-height: 145.77px;
+  transform: rotate(-5deg);
   z-index: -1;
-  background: conic-gradient(#8ac1f8, #a9dbf8);
-  animation: light-pulse 1.25s ease-out infinite both alternate;
-  border-radius: 50%;
-  filter: blur(24px);
 }
 
 .light3 {
@@ -197,10 +191,10 @@
   will-change: transform;
   border-radius: 1rem;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
