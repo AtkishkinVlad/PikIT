@@ -51,7 +51,7 @@ export default function Home() {
             <label htmlFor="1" className={styles.tall}>
               <input id="1" name="1" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Получать приглашение на встречу с темой: «Надо поговорить»" />
               <h3 className={styles.description}>
-                Получать приглашение на встречу с темой: «Надо поговорить»
+                Получать приглашение на встречу <br />с темой: «Надо поговорить»
               </h3>
             </label>
             <label htmlFor="2" className={styles.tall}>
@@ -69,13 +69,13 @@ export default function Home() {
             <label htmlFor="4" className={styles.tall}>
               <input id="4" name="4" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Смотреть встречи в записи, потому что в календаре нет свободных окон" />
               <h3 className={styles.description}>
-                Смотреть встречи в записи, потому что в календаре нет свободных окон
+                Смотреть встречи в записи, потому что <br />в календаре нет свободных окон
               </h3>
             </label>
             <label htmlFor="5" className={styles.tall}>
               <input id="5" name="5" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Включать шумоподавление, потому что соседи начали ремонт" />
               <h3 className={styles.description}>
-                Включать шумоподавление, потому что соседи начали ремонт
+                Включать шумоподавление, потому&nbsp;что соседи начали ремонт
               </h3>
             </label>
             <label htmlFor="6" className={styles.tall}>
