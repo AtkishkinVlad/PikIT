@@ -61,7 +61,8 @@
   font-weight: 600;
 }
 
-.description__suggestion:hover {
+.description__suggestion:hover,
+.description__suggestion:focus-visible {
   transform: scale(1.1);
   box-shadow: var(--main-color) 0px 1px 4px, var(--main-color) 0px 0px 0px 3px;
 }
@@ -233,7 +234,8 @@
   transition: box-shadow 0.15s linear;
 }
 
-.button:hover {
+.button:hover,
+.button:focus-visible {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
