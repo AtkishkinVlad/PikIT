@@ -3,7 +3,6 @@
     flex-flow: column nowrap;
     margin: 32px auto;
     text-align: center;
-    height: 90vh;
     width: 500px;
 }
 
@@ -33,19 +32,8 @@
     opacity: 0.8;
 }
 
-.logo {
-    position: absolute;
-    right: 32px;
-    bottom: 32px;
-    display: none;
-    animation: people linear;
-}
-
 .talk {
-    position: absolute;
-    left: 32px;
-    top: 32px;
-    display: none;
+    display: block;
     animation: people linear;
 }
 
@@ -70,11 +58,6 @@
 @media screen and (min-width: 1100px) {
     .container {
         width: 750px;
-    }
-
-    .talk,
-    .logo {
-        display: block;
     }
 }
 

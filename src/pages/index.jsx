@@ -115,14 +115,13 @@ export default function Home() {
                 Ловить глюки интернета в самый важный момент
               </h3>
             </label>
+            {checkCount > 0 && <button className={`${styles.button}`} type="submit">Поделиться своим бинго </button>}
           </form>
           <footer style={{
-            marginTop: '2rem',
             display: 'flex',
             flexFlow: 'column nowrap',
             alignItems: 'center'
           }}>
-            {checkCount > 0 && <button className={`${styles.button}`} type="submit">Поделиться своим бинго </button>}
             <Image width={256} height={256} src="https://s.kontur.ru/common-v2/logos/logo-talk-32.svg" alt="Логотип Толка" />
           </footer>
         </main>
