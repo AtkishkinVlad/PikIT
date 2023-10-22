@@ -168,11 +168,14 @@
 
 .grid_wrapper .wide:has(input[type=checkbox]:checked) {
   background-color: #2291FF;
-  color: white;
 }
 
 .grid_wrapper .tall:has(input[type=checkbox]:checked) {
   background-color: #2291FF;
+}
+
+.grid_wrapper .tall:has(input[type=checkbox]:focus-visible) {
+  transform: scale(1.1);
 }
 
 .grid_wrapper .tall:has(input[type=checkbox]:checked) h3 {
