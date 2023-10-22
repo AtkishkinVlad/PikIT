@@ -69,8 +69,8 @@
 .light1 {
   display: block;
   position: absolute;
-  top: 70%;
-  right: 20%;
+  top: 60%;
+  right: 16%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
@@ -82,8 +82,8 @@
 .light2 {
   display: block;
   position: absolute;
-  bottom: 30%;
-  left: 20%;
+  bottom: 10%;
+  left: 22%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
@@ -152,7 +152,6 @@
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 100px;
 	grid-auto-flow: dense;
 }
 
@@ -187,6 +186,7 @@
 	grid-row: span 3;
   position: relative;
   min-width: 230px;
+  max-height: 240px;
   transition: all 0.2s ease-in-out;
   will-change: transform;
   border-radius: 1rem;
