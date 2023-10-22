@@ -68,8 +68,8 @@
 
 .light1 {
   display: block;
-  position: fixed;
-  top: 60%;
+  position: absolute;
+  top: 70%;
   right: 20%;
   height: 10vw;
   width: 10vw;
@@ -81,8 +81,8 @@
 
 .light2 {
   display: block;
-  position: fixed;
-  bottom: 35%;
+  position: absolute;
+  bottom: 30%;
   left: 20%;
   height: 10vw;
   width: 10vw;
