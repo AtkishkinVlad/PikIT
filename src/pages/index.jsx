@@ -63,7 +63,7 @@ export default function Home() {
               </h3>
             </label>
             <label htmlFor="3" className={styles.tall}>
-              <input id="3" name="3" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Все друг друга перебивали" />
+              <input id="3" name="3" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Видеть как все перебивают друг друга" />
               <h3 className={styles.description}>
                 Видеть как все перебивают друг друга
               </h3>
@@ -117,7 +117,7 @@ export default function Home() {
               </h3>
             </label>
             <label htmlFor="12"  className={styles.tall}>
-              <input id="12" name="12" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Путать часовые пояса и подключаться не в то время" />
+              <input id="12" name="12" onClick={onClickHandler} type="checkbox" className={styles.checkbox} value="Ловить глюки интернета в самый важный момент" />
               <h3 className={styles.description}>
                 Ловить глюки интернета в самый важный момент
               </h3>
