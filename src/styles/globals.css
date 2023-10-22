@@ -2,9 +2,9 @@
 
 :root {
   --diadoc-color: #00ccae;
-  --background-color: #000;
+  --background-color: white;
   --qr: #FF5A49;
-  --main-color: #fff;
+  --main-color: black;
   --mobile-width: 400px;
   --table-width: 600px;
   --notebook-width: 800px;

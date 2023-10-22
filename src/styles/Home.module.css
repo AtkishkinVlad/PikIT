@@ -67,65 +67,65 @@
 }
 
 .light1 {
-  display: none;
+  display: block;
   position: fixed;
-  top: 6%;
-  right: 4%;
+  top: 60%;
+  right: 16%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: conic-gradient(#69f2c2c9, var(--diadoc-color));
+  background: conic-gradient(#2291FF, #08a3fd);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(16px);
 }
 
 .light2 {
-  display: none;
+  display: block;
   position: fixed;
-  bottom: 6%;
-  left: 4%;
+  top: 33%;
+  left: 50%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: conic-gradient(#db95da, #f87bf6);
+  background: conic-gradient(#2291FF, #08a3fd);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(24px);
 }
 
 .light3 {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 6%;
-  right: 4%;
+  right: 50%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: conic-gradient(#366af3, #2fccf4);
+  background: conic-gradient(#2291FF, #08a3fd);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(36px);
 }
 
 .light4 {
-    display: none;
+    display: block;
     position: 
     fixed;
-    top: 6%;
-    left: 4%;
+    bottom: 35%;
+    left: 14%;
     height: 10vw;
     width: 10vw;
     min-width: 139.94px;
     min-height: 145.77px;
     z-index: -1;
-    background: conic-gradient(#fef99ae0, #fba97c);
+    background: conic-gradient(#2291FF, #08a3fd);
     animation: light-pulse 1.25s ease-out infinite both alternate;
     border-radius: 50%;
     filter: blur(36px);
@@ -157,7 +157,7 @@
 .grid_wrapper {
 	display: grid;
 	grid-gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: 100px;
 	grid-auto-flow: dense;
 }
@@ -173,26 +173,35 @@
 }
 
 .grid_wrapper .wide:has(input[type=checkbox]:checked) {
-  background-color: red;
+  background-color: #2291FF;
+  color: white;
 }
 
 .grid_wrapper .tall:has(input[type=checkbox]:checked) {
-  background-color: red;
+  background-color: #2291FF;
+}
+
+.grid_wrapper .tall:has(input[type=checkbox]:checked) h3 {
+  color: white;
 }
 
 .grid_wrapper .big:has(input[type=checkbox]:checked) {
-  background-color: red;
+  background-color: #2291FF;
 }
 
 .grid_wrapper .tall {
 	grid-row: span 3;
   position: relative;
-  min-width: 220px;
+  min-width: 230px;
   transition: all 0.2s ease-in-out;
   will-change: transform;
-  background-color: #49423d;
   border-radius: 1rem;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .grid_wrapper .big {
@@ -208,14 +217,16 @@
 
 .description {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
+  text-wrap: balance;
 }
 
 .button {
-  background-color: #015ccb !important;
+  background-color: #2291FF !important;
   color: #fff;
   font-weight: 700;
   grid-column: 3 span;
+  font-size: 2rem;
   outline: 0;
   border: 0;
   border-radius: 1rem;
@@ -303,10 +314,7 @@
     width: var(--desktop-width);
   }
 
-  .light1,
-  .light2,
-  .light3,
-  .light4 {
-    display: block;
+  .grid_wrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
