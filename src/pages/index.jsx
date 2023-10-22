@@ -35,6 +35,13 @@ export default function Home() {
         <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
       </Head>
       <div className={styles.postcard__container}>
+        <header style={{
+            display: 'flex',
+            flexFlow: 'column nowrap',
+            alignItems: 'center'
+          }}>
+            <Image width={256} height={128} src="https://s.kontur.ru/common-v2/logos/logo-talk-32.svg" alt="Логотип Толка" />
+        </header>
         <main className={styles.postcard__description}>
           <h1 className={styles.description__title}>
             Бинго курьезов на рабочих созвонах
@@ -117,13 +124,6 @@ export default function Home() {
             </label>
             {checkCount > 0 && <button className={`${styles.button}`} type="submit">Поделиться своим бинго </button>}
           </form>
-          <footer style={{
-            display: 'flex',
-            flexFlow: 'column nowrap',
-            alignItems: 'center'
-          }}>
-            <Image width={256} height={256} src="https://s.kontur.ru/common-v2/logos/logo-talk-32.svg" alt="Логотип Толка" />
-          </footer>
         </main>
       </div>
       <div className={styles.light1} />

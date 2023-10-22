@@ -233,6 +233,7 @@
   cursor: pointer;
   width: 100%;
   height: max(10vh, 150px);
+  margin-top: 1rem;
   padding: 24px;
   cursor: pointer;
 }
