@@ -318,4 +318,8 @@
   .grid_wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .button {
+    grid-column: 4 span;
+  }
 }
