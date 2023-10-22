@@ -69,26 +69,26 @@
 .light1 {
   display: block;
   position: absolute;
-  top: 60%;
+  top: 50%;
   right: 16%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
   min-height: 145.77px;
-  transform: rotate(5deg);
+  transform: rotate(7deg);
   z-index: -1;
 }
 
 .light2 {
   display: block;
   position: absolute;
-  bottom: 10%;
-  left: 22%;
+  bottom: 18%;
+  left: 16%;
   height: 10vw;
   width: 10vw;
   min-width: 139.94px;
   min-height: 145.77px;
-  transform: rotate(-5deg);
+  transform: rotate(-11deg);
   z-index: -1;
 }
 
