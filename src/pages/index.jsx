@@ -44,7 +44,7 @@ export default function Home() {
         </header>
         <main className={styles.postcard__description}>
           <h1 className={styles.description__title}>
-            Бинго курьезов на рабочих созвонах
+            Бинго курьезов <br />на рабочих созвонах
           </h1>
           <p style={{ textAlign: 'start', marginBottom: '32px' }}>
             Отмечай, что с тобой уже случалось на созвоне — посмотрим, насколько схожие у нас бывают ситуации. 
