@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Agile Days + Контур = 💕</title>
+        <title>Бинго курьезов на рабочих созвонах 📞</title>
         <meta name="description" content="Что ты выберешь?" />
         <meta name="viewport" content="width=device-width, initial-scale=0.4" />
         <link rel="icon" href="https://s.kontur.ru/common-v2/icons-products/kontur/favicon/kontur-favicon.svg" />
