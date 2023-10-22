@@ -7,7 +7,6 @@ import styles from "@/styles/Home.module.css";
 
 export default function Home() {
   const [checkCount, setCheckCount] = useState(0);
-  const [isLoading, setIsLoading] = useState(false);
   const { state, submit } = useForm({
     id: 'ZKOWzFx9aP'
   });
@@ -121,7 +120,7 @@ export default function Home() {
                 Ловить глюки интернета в самый важный момент
               </h3>
             </label>
-            {checkCount > 0 && <button onClick={() => setIsLoading(true)} className={`${styles.button}`} type="submit">{isLoading ? "Идет отправка ответа..." : "Поделиться своим бинго"}</button>}
+            {checkCount > 0 && <button className={`${styles.button}`} type="submit">{state.submitting ? "Идет отправка ответа..." : "Поделиться своим бинго"}</button>}
           </form>
         </main>
       </div>
