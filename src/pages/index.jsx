@@ -123,6 +123,12 @@ export default function Home() {
             {checkCount > 0 && <button className={`${styles.button}`} type="submit">{state.submitting ? "Идет отправка ответа..." : "Поделиться своим бинго"}</button>}
           </form>
         </main>
+        <footer>
+          {state.error && <p style={{
+            fontSize: '1.4rem',
+            fontWeight: '700'
+          }}>Произошла ошибка, попробуйте отправить ответ еще раз</p>}
+        </footer>
       </div>
       <Image className={styles.light1} width={24} height={24} alt="Логотип Толка" src="https://s.kontur.ru/common-v2/icons-products/talk/talk-32.svg" />
       <Image className={styles.light2} width={24} height={24} alt="Логотип Толка" src="https://s.kontur.ru/common-v2/icons-products/talk/talk-32.svg" />
