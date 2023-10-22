@@ -76,7 +76,7 @@
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: conic-gradient(#2291FF, #08a3fd);
+  background: conic-gradient(#8ac1f8, #a9dbf8);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(16px);
@@ -92,7 +92,7 @@
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: conic-gradient(#2291FF, #08a3fd);
+  background: conic-gradient(#8ac1f8, #a9dbf8);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(24px);
@@ -108,7 +108,7 @@
   min-width: 139.94px;
   min-height: 145.77px;
   z-index: -1;
-  background: conic-gradient(#2291FF, #08a3fd);
+  background: conic-gradient(#8ac1f8, #a9dbf8);
   animation: light-pulse 1.25s ease-out infinite both alternate;
   border-radius: 50%;
   filter: blur(36px);
@@ -125,7 +125,7 @@
     min-width: 139.94px;
     min-height: 145.77px;
     z-index: -1;
-    background: conic-gradient(#2291FF, #08a3fd);
+    background: conic-gradient(#8ac1f8, #a9dbf8);
     animation: light-pulse 1.25s ease-out infinite both alternate;
     border-radius: 50%;
     filter: blur(36px);
