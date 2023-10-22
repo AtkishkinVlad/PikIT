@@ -10,7 +10,7 @@ import styles from "@/styles/Home.module.css";
 export default function Home() {
   const [checkCount, setCheckCount] = useState(0);
   const { state, submit } = useForm({
-    id: '7sFpT9X6bI'
+    id: 'ZKOWzFx9aP'
   });
 
   const onClickHandler = (e) => {
@@ -23,7 +23,7 @@ export default function Home() {
   }
 
   if (state.submitted) {
-    return <RedirectPage />;
+    window.open('https://kontur.ru/talk/actions/576');
   }
 
   return (
